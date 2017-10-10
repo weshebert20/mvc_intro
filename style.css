@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	height: 800px;
+	background-color: #3fb0ac;
+	background: -webkit-linear-gradient(45deg, rgba(0,255,0,1) 0%, rgba(0,128,128,1) 50%, rgba(0,128,128,1) 69%, rgba(0,128,128,1) 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,255,0,1)), color-stop(50%, rgba(0,128,128,1)), color-stop(69%, rgba(0,128,128,1)), color-stop(100%, rgba(0,128,128,1)));
+	background: -moz-linear-gradient(45deg, rgba(0,255,0,1) 0%, rgba(0,128,128,1) 50%, rgba(0,128,128,1) 69%, rgba(0,128,128,1) 100%);
+}
+
+header {
+	background-color: #173e43;
+	margin: 0;
+	padding: 3%;
+}
+
+h1{
+	color: #fae596;
+	font-family: 'Stalinist One', cursive;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 50px;
+}
+
+input {
+	padding: 3%;
+	border-radius: 5px;
+	width: 20%;
+}
+
+form {
+	margin-left: 26%;
+	margin-top: 7%;
+
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+button {
+	padding: 3%;
+	background-color: #fae596;
+	border: none;
+	border-radius: 5px;
+}
+
+button:hover {
+	animation: bounce 1s;
+}
+
+
+
+

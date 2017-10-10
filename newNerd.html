@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NERD ALERT</title>
+	<link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			margin: 0;
+			height: 800px;
+			background-color: #3fb0ac;
+			background: -webkit-linear-gradient(bottom left, rgba(0,255,0,1) 0%, rgba(0,128,128,1) 50%, rgba(0,128,128,1) 69%, rgba(0,128,128,1) 100%);
+			background: -o-linear-gradient(bottom left, rgba(0,255,0,1) 0%, rgba(0,128,128,1) 50%, rgba(0,128,128,1) 69%, rgba(0,128,128,1) 100%);
+			background: linear-gradient(to top right, rgba(0,255,0,1) 0%, rgba(0,128,128,1) 50%, rgba(0,128,128,1) 69%, rgba(0,128,128,1) 100%);
+		}				
+
+		header {
+			background-color: #173e43;
+			margin: 0;
+			padding: 3%;
+		}
+
+		h1{
+			color: #fae596;
+			font-family: 'Stalinist One', cursive;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 50px;
+			animation-duration: 1s;
+  			animation-name: bounceIn;
+		}
+
+		input {
+			padding: 3%;
+			border-radius: 5px;
+			width: 20%;
+		}
+
+		form {
+			margin-left: 26%;
+			margin-top: 7%;
+
+		}
+
+		@keyframes bounceIn {
+		  0% {
+		    transform: scale(0.1);
+		    opacity: 0;
+		  }
+		  60% {
+		    transform: scale(1.2);
+		    opacity: 1;
+		  }
+		  100% {
+		    transform: scale(1);
+		  }
+		}
+
+		@keyframes bounce {
+			0%, 20%, 60%, 100% {
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			40% {
+				-webkit-transform: translateY(-20px);
+				transform: translateY(-20px);
+			}
+
+			80% {
+				-webkit-transform: translateY(-10px);
+				transform: translateY(-10px);
+			}
+		}
+
+		button {
+			padding: 3%;
+			background-color: #fae596;
+			border: none;
+			border-radius: 5px;
+		}
+
+		button:hover {
+			animation: bounce 1s;
+		}
+
+	</style>
+
+</head>
+<body>
+	<header class="header">
+		<h1>NERD ALERT!</h1>
+	</header>
+	<form method="post" action="/nerds">
+  		<input type="text" name="name" value="Wes" />
+  		<input type="text" name="title" value="Professor of Fibonaccization" />
+  		<button type="submit">Take off!</button>
+	</form>
+</body>
+</html>
+
+
+
+
+
